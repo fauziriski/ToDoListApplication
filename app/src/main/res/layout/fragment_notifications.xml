@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/titlepage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textSize="28sp"
+            android:textColor="#FFF"
+            android:text="MyDOES"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/subtitlepage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#4A4E6A"
+            android:textSize="18sp"
+            android:text="Finis Them Quickly Today"
+            android:textAlignment="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#131E69"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_menus_profil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        tools:listitem="@layout/profil">
+
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>
