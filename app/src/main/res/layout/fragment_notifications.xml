@@ -4,51 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f4f4f4"
+    android:background="#FFFFFF"
+
+    android:layout_marginBottom="10dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
+        android:padding="20dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="198dp"
-        android:background="@color/colorPrimaryDark">
+        android:background="#0193CF">
 
-        <TextView
-            android:id="@+id/titlepage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:textSize="28sp"
-            android:textColor="#FFF"
-            android:text="MyDOES"
-            android:textAlignment="center"/>
-
-        <TextView
-            android:id="@+id/subtitlepage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textColor="#4A4E6A"
-            android:textSize="18sp"
-            android:text="Finis Them Quickly Today"
-            android:textAlignment="center"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/image"
             android:layout_marginTop="20dp"
-            android:background="#131E69"
+            android:src="@mipmap/ic_launcher"
             />
-    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kota Pariaman, Sumbar, Indonesia"
+            android:id="@+id/name"
+            android:layout_toRightOf="@+id/image"
+            android:textColor="#FFF"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="10sp"
+            />
+
+        <TextView
+            android:id="@+id/nohp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fikri Aulia"
+            android:layout_toRightOf="@+id/image"
+            android:layout_marginTop="30dp"
+            android:textColor="#FFF"
+            android:layout_marginLeft="30dp"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/nohp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0852-7454-4239"
+            android:layout_toRightOf="@+id/image"
+            android:layout_marginTop="70dp"
+            android:textColor="#FFF"
+            android:layout_marginLeft="30dp"
+            android:textSize="10sp"/>
+    </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_menus_profil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-60dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="1dp"
         tools:listitem="@layout/profil">
 
 
